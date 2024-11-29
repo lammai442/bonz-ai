@@ -1,0 +1,83 @@
+/* DEFAULT SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COLORS */
+:root {
+    --light-green-bg-color: #C7C9A9;
+    --lightest-green-bg-color: #ECEED7;
+    --dark-green-bg-color: #7E8341;
+    --darkest-green-bg-color: #4D4729;
+
+    --primary-text-color: #4F492A;
+    --secondary-text-color: #fff;
+
+    /* FONTS */
+
+    --primary-font: "Roboto";
+}
+
+/* LANDING PAGE */
+body {
+    background-color: var(--lightest-green-bg-color);
+}
+/* HEADER SECTION */
+.header {
+    padding: 1.5rem;
+    background-color: var(--light-green-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 7%;
+}
+
+.header__navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    /* gap: 3rem; */
+}
+
+.header__nav-titles {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--secondary-text-color);
+    cursor: pointer;
+}
+
+.header__nav-titles:hover {
+    background-color: var(--dark-green-bg-color);
+}
+
+.header__btn-booking {
+    height: auto;
+    background-color: var(--dark-green-bg-color);
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.header__btn-booking:hover {
+    background-color: var(--darkest-green-bg-color);
+    cursor: pointer;
+}
+
+/* .header__down-arrow {
+    width: 5%;
+    background-color: black;
+} */
