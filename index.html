@@ -30,6 +30,28 @@
                 </li>
             </ul>
         </nav>
+
+        <nav class="header__navigation header__hamburger">
+            <ul class="header__nav-list">
+                <li class="header__nav-titles">
+                    <a href="about-bonzai.html" class="header__links">OM BONZ.AI</a></li>
+                <li class="header__nav-titles">
+                    <a href="ai.html" class="header__links">AI</a>
+                </li>
+                <li class="header__nav-titles">
+                    <a href="eat-and-drink.html" class="header__links">ÄT & DRICK</a>
+                </li>
+                <li class="header__nav-titles">
+                    <a href="rooms.html" class="header__links">VÅRA RUM</a>
+                </li>
+            </ul>
+        </nav>
+
+        <input type="checkbox" class="header__hamburger-menu" id="header__hamburger-menu">
+        <label class="header__hamburger-btn" for="header__hamburger-menu">
+            <span></span>
+        </label>
+
         <button class="btn">BOKA RUM</button>
     </header>
 
@@ -44,11 +66,13 @@
                 FUTURISTISKA<br>
                 HOTELLUPPLEVELSE
             </p>
-            <button class="btn btn--small">LÄS MER</button>
+            <a href="about-bonzai.html" class="btn btn--small">
+            LÄS MER
+            </a>
         </article>
     </section>
     
-    <div class="wrapper">
+    <main class="wrapper">
         <!-- BOOKING FORM -->
         <form class="booking">
             <section class="booking__titles">
@@ -88,7 +112,7 @@
                 </section>
             </section>
                         
-            <section class="image-info__block">
+            <section class="image-info__block image-info__block--wrap-reverse">
                 <section class="image-info__text">
                     <h2 class="image-info__title">EGEN AI-ASSISTENT</h2>
                     <p class="image-info__description">En AI-assistent i varje rum hjälper gästerna att planera sitt besök, boka aktiviteter eller svara på frågor i realtid.</p>
@@ -108,7 +132,7 @@
                 </section>
             </section>
         </section>
-    </div>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">
