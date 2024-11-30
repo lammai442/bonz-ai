@@ -4,13 +4,43 @@
 			"path": "style/styles.css",
 			"bookmarks": [
 				{
+					"line": 7,
+					"column": 7,
+					"label": ""
+				},
+				{
 					"line": 26,
 					"column": 2,
 					"label": ""
 				},
 				{
-					"line": 83,
+					"line": 88,
 					"column": 17,
+					"label": ""
+				},
+				{
+					"line": 125,
+					"column": 6,
+					"label": ""
+				},
+				{
+					"line": 153,
+					"column": 21,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "index.html",
+			"bookmarks": [
+				{
+					"line": 49,
+					"column": 24,
+					"label": ""
+				},
+				{
+					"line": 72,
+					"column": 23,
 					"label": ""
 				}
 			]

@@ -8,15 +8,25 @@
 </head>
 <body>
     <header class="header">
-        <img src="assets/logo/bonz.ai-logo-white-portrait-full.png" alt="logo" class="header__logo">
+        <figure class="header__logo">
+            <a href="index.html" class="header__favicon">
+                <img src="assets/logo/bonz.ai-logo-white-portrait.png" alt="logo" class="header__favicon">
+            </a>
+        </figure>
+        
         <nav class="header__navigation">
             <ul class="header__nav-list">
-                <li class="header__nav-titles">OM BONZ.AI
-                    <!-- <img src="assets/icons/chevron-down-solid.svg" alt="Down arrow icon" class="header__down-arrow"> -->
+                <li class="header__nav-titles">
+                    <a href="about-bonzai.html" class="header__links">OM BONZ.AI</a></li>
+                <li class="header__nav-titles">
+                    <a href="ai.html" class="header__links">AI</a>
                 </li>
-                <li class="header__nav-titles">AI</li>
-                <li class="header__nav-titles">ÄT & DRICK</li>
-                <li class="header__nav-titles">VÅRA RUM</li>
+                <li class="header__nav-titles">
+                    <a href="eat-and-drink.html" class="header__links">ÄT & DRICK</a>
+                </li>
+                <li class="header__nav-titles">
+                    <a href="rooms.html" class="header__links">VÅRA RUM</a>
+                </li>
             </ul>
         </nav>
         <button class="btn">BOKA RUM</button>
@@ -37,7 +47,66 @@
     </section>
     
     <div class="wrapper">
+        <!-- BOOKING FORM -->
+        <form class="booking">
+            <section class="booking__titles">
+                <h2 class="booking__head-title">Boka ett rum</h2>
+                <h3 class="booking__sub-title">Upptäck din unika hotellupplevelse</h3>
+            </section>
+            <section class="booking__input-field">
+                <label class="booking__input">
+                    <h3 class="booking__input-title">Datum</h3>   
+                    <input type="date" class="booking__input-box">
+                </label>
+                <label class="booking__input">
+                    <h3 class="booking__input-title">Antal vuxna</h3>   
+                    <input type="number" class="booking__input-box" min="0">
+                </label>
+                <label class="booking__input">
+                    <h3 class="booking__input-title">Antal barn (0-15 år)</h3>   
+                    <input type="number" class="booking__input-box" min="0">
+                </label>
+                <button class="btn">Boka nu</button>
+            </section>
+        </form>
 
+        <!-- IMAGE INFO SECTION -->
+        <section class="image-info">
+            <section class="image-info__block">
+                <figure class="image-info__figure">
+                    <img src="assets/photos/facility/bonsai-hotel.jpg" alt="Image of AI-robots who assists in various hotel jobs" class="image-info__img">
+                </figure>
+                <section class="image-info__text">
+                    <h2 class="image-info__title">GRÖN DESIGN</h2>
+                    <p class="image-info__description">Hotellets arkitektur smälter samman med naturen, med gröna väggar och takträdgårdar för att minska värmeöar och förbättra luftkvaliteten.</p>
+                </section>
+            </section>
+                        
+            <section class="image-info__block">
+                <section class="image-info__text">
+                    <h2 class="image-info__title">EGEN AI-ASSISTENT</h2>
+                    <p class="image-info__description">En AI-assistent i varje rum hjälper gästerna att planera sitt besök, boka aktiviteter eller svara på frågor i realtid.</p>
+                </section>
+                <figure class="image-info__figure">
+                    <img src="assets/photos/robots/ai-kitchen-bed.webp" alt="Image of AI-robots who assists in various hotel jobs" class="image-info__img">
+                </figure>
+            </section>
+
+            <section class="image-info__block">
+                <figure class="image-info__figure">
+                    <img src="assets/photos/robots/kitchen-food.jpg" alt="Image of AI-robots who assists in various hotel jobs" class="image-info__img">
+                </figure>
+                <section class="image-info__text">
+                    <h2 class="image-info__title">ZERO WASTE-KÖK</h2>
+                    <p class="image-info__description">Alla måltider tillagas med lokala, ekologiska ingredienser, och matsvinn återvinns till biogas eller kompost. Fisk och andra råvaror kommer från närområdet.</p>
+                </section>
+            </section>
+        </section>
     </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+    </footer>
 </body>
 </html>
