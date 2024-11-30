@@ -9,6 +9,11 @@
 					"label": ""
 				},
 				{
+					"line": 21,
+					"column": 17,
+					"label": ""
+				},
+				{
 					"line": 26,
 					"column": 2,
 					"label": ""
@@ -19,13 +24,28 @@
 					"label": ""
 				},
 				{
-					"line": 125,
+					"line": 116,
+					"column": 3,
+					"label": ""
+				},
+				{
+					"line": 126,
 					"column": 6,
 					"label": ""
 				},
 				{
-					"line": 153,
+					"line": 154,
 					"column": 21,
+					"label": ""
+				},
+				{
+					"line": 180,
+					"column": 7,
+					"label": ""
+				},
+				{
+					"line": 223,
+					"column": 10,
 					"label": ""
 				}
 			]
@@ -34,13 +54,48 @@
 			"path": "index.html",
 			"bookmarks": [
 				{
-					"line": 49,
+					"line": 9,
+					"column": 15,
+					"label": ""
+				},
+				{
+					"line": 35,
+					"column": 13,
+					"label": ""
+				},
+				{
+					"line": 51,
 					"column": 24,
 					"label": ""
 				},
 				{
-					"line": 72,
+					"line": 78,
 					"column": 23,
+					"label": ""
+				},
+				{
+					"line": 112,
+					"column": 14,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "about-bonzai.html",
+			"bookmarks": [
+				{
+					"line": 9,
+					"column": 15,
+					"label": ""
+				},
+				{
+					"line": 35,
+					"column": 16,
+					"label": ""
+				},
+				{
+					"line": 65,
+					"column": 13,
 					"label": ""
 				}
 			]

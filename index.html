@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
-        <figure class="header__logo">
+        <figure class="logo">
             <a href="index.html" class="header__favicon">
-                <img src="assets/logo/bonz.ai-logo-white-portrait.png" alt="logo" class="header__favicon">
+                <img src="assets/logo/bonz.ai-logo-white-portrait.png" alt="logo" class="logo__favicon">
             </a>
         </figure>
         
@@ -32,6 +33,7 @@
         <button class="btn">BOKA RUM</button>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
         <figure class="hero__image-box">
             <img class="hero__image" src="assets/photos/hero-images/hero-ai-kitchen.webp" alt="Hero image of AI-assistent in hotel enviroment">
@@ -55,26 +57,30 @@
             </section>
             <section class="booking__input-field">
                 <label class="booking__input">
-                    <h3 class="booking__input-title">Datum</h3>   
+                    <h3 class="booking__input-title">Startdatum</h3>   
                     <input type="date" class="booking__input-box">
                 </label>
                 <label class="booking__input">
-                    <h3 class="booking__input-title">Antal vuxna</h3>   
+                    <h3 class="booking__input-title">Slutdatum</h3>   
+                    <input type="date" class="booking__input-box">
+                </label>
+                <label class="booking__input">
+                    <h3 class="booking__input-title">Vuxna</h3>   
                     <input type="number" class="booking__input-box" min="0">
                 </label>
                 <label class="booking__input">
-                    <h3 class="booking__input-title">Antal barn (0-15 år)</h3>   
+                    <h3 class="booking__input-title">Barn (0-15 år)</h3>   
                     <input type="number" class="booking__input-box" min="0">
                 </label>
-                <button class="btn">Boka nu</button>
             </section>
+            <button class="btn">Boka nu</button>
         </form>
 
         <!-- IMAGE INFO SECTION -->
         <section class="image-info">
             <section class="image-info__block">
                 <figure class="image-info__figure">
-                    <img src="assets/photos/facility/bonsai-hotel.jpg" alt="Image of AI-robots who assists in various hotel jobs" class="image-info__img">
+                    <img src="assets/photos/facility/bonsai-hotel.jpg" alt="Image of the Hotel Bonzai" class="image-info__img">
                 </figure>
                 <section class="image-info__text">
                     <h2 class="image-info__title">GRÖN DESIGN</h2>
@@ -106,7 +112,28 @@
 
     <!-- FOOTER -->
     <footer class="footer">
+        <figure class="logo logo--larger logo--center">
+            <a href="index.html" class="header__favicon">
+                <img src="assets/logo/bonz.ai-logo-white-portrait.png" alt="logo" class="logo__favicon">
+            </a>
+        </figure>
+        <section class="footer__text">
+            <h2 class="footer__title">Bonz.AI hotel</h2>
+            <p class="footer__contact-text">
+                By 80<br>
+                686 93 Sunne
+            </p>
+            <section class="footer__contact">
+                <img class="footer__icon" src="assets/icons/phone3.png" alt="Phone icon">
+                <p class="footer__contact-text">+46 54 152 35</p>
+            </section>
+            <section class="footer__contact">
+                <img class="footer__icon" src="assets/icons/email3.png" alt="Email icon">
+                <p class="footer__contact-text">info@bonzai.com</p>
+            </section>
+        </section>
 
+        <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64055.63902158073!2d12.988436222076409!3d59.88668696960804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464320da325046bd%3A0xb8b6d14d9b43dcd6!2sHotell%20Frykenstrand%2C%20Sure%20Hotel%20Collection%20by%20Best%20Western!5e0!3m2!1ssv!2sse!4v1732962781687!5m2!1ssv!2sse" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
 </body>
 </html>

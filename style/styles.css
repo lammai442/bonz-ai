@@ -19,7 +19,7 @@
     --primary-font: "Roboto";
 }
 
-/* LANDING PAGE */
+/* PAGE - LANDING */
 body {
     background-color: var(--lightest-green-bg-color);
 }
@@ -33,12 +33,12 @@ body {
     justify-content: space-between;
 }
 
-.header__logo {
+.logo {
     aspect-ratio: 1;
     width: 80px;
 }
 
-.header__favicon {
+.logo__favicon {
     width: 100%;
 }
 
@@ -99,6 +99,7 @@ body {
 
 .hero__image {
     width: 100%;
+    border-radius: 10px;
 }
 
 .hero__description {
@@ -125,7 +126,7 @@ body {
 
 /* BOOKING FORM */
 .booking {
-    width: 80%;
+    width: 70%;
     padding: 2rem 0;
     background-color: var(--light-green-bg-color);
     border-radius: 10px;
@@ -133,20 +134,20 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .booking__input-field {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 200px));
+    grid-template-columns: repeat(auto-fit, minmax(80px, 140px));
     justify-content: center;
     row-gap: 1.5rem;
 }
 
 .booking__input-box {
     margin-top: .5rem;
-    max-width: 55%;
+    max-width: 70%;
     height: 2rem;
     padding-left: .5rem;
 }
@@ -178,7 +179,77 @@ body {
 }
 
 /* FOOTER */
+.footer {    
+    padding: 2rem;
+    background-color: var(--light-green-bg-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    row-gap: 1rem;
+}
 
+.logo--larger {
+    min-width: 35%;
+}
+
+.logo--center {
+    align-self: center;
+    justify-self: center;
+}
+
+.footer__text {
+    width: 150px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+
+.footer__icon {
+    width: 12%;
+    aspect-ratio: 1;
+
+}
+
+.footer__map {
+    justify-self: center;
+}
+
+/* PAGE - ABOUT BONZAI */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    gap: 1rem;
+}
+
+.gallery__img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.circle {
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.circle__image {
+    width: 50%;
+    border-radius: 10px;
+}
 
 
 
