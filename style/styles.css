@@ -26,7 +26,7 @@ body {
     background-color: var(--lightest-green-bg-color);
 }
 
-/* HEADER SECTION */
+/* HEADER SECTION - LANDING */
 .header {
     padding: 1.5rem 1.5rem;
     background-color: var(--light-green-bg-color);
@@ -99,7 +99,7 @@ body {
     display: none;
 }
 
-/* HERO SECTION */
+/* HERO SECTION - LANDING */
 .hero {
     display: flex;
     flex-direction: row;
@@ -127,7 +127,7 @@ body {
     width: max-content;
 }
 
-/* WRAPPER */
+/* WRAPPER - LANDING*/
 .wrapper {
     max-width: 1250px;
     margin: 0 auto;
@@ -137,7 +137,7 @@ body {
     align-items: center;
 }
 
-/* BOOKING FORM */
+/* BOOKING FORM - LANDING */
 .booking {
     width: 70%;
     padding: 2rem 0;
@@ -165,7 +165,7 @@ body {
     padding-left: .5rem;
 }
 
-/* IMAGE INFO SECTION */
+/* IMAGE INFO SECTION - LANDING*/
 
 .image-info__block {
     width: 100%;
@@ -192,7 +192,7 @@ body {
     border-radius: 10px;
 }
 
-/* FOOTER */
+/* FOOTER - ALL */
 .footer {    
     padding: 2rem;
     background-color: var(--light-green-bg-color);
@@ -265,6 +265,45 @@ body {
     border-radius: 10px;
 }
 
+/* PAGE - BOOKING ROOM */
+.search {
+    background-color: red;
+}
+
+.wrapper--flex-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+
+.booking--wider {
+    width: 320px;
+    /* width: 100%; */
+}
+
+.wrapper--flex-row {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.room {
+    display: flex;
+    flex-direction: column;
+}
+
+.room__card {
+    display: flex;
+    flex-direction: row;
+}
+.room__image {
+    flex: 2;
+    width: 100%;
+}
+
+.room__info {
+    flex: 7;
+}
+
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 880px) {
       .btn {
@@ -276,7 +315,11 @@ body {
         align-items: flex-start;
     }
 
-    .header button {
+    /* .header button {
+        display: none;
+    } */
+
+    .header > .btn {
         display: none;
     }
     
