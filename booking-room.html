@@ -28,26 +28,25 @@
     <!-- WRAPPER -->
     <main class="wrapper wrapper--flex-row">
 
-        <aside class="search">
-            <h2>Din sökning</h2>
-            <form class="booking booking--wider">
+        <aside class="booking">
+            <form class="booking booking--wider booking__input-field--padding">
                 <section class="booking__titles">
                     <h2 class="booking__head-title">Din sökning</h2>
                 </section>
-                <section class="booking__input-field">
-                    <label class="booking__input">
+                <section class="booking__input-field booking__input-field--wide">
+                    <label class="booking__input booking__input--width">
                         <h3 class="booking__input-title">Startdatum</h3>   
                         <input type="date" class="booking__input-box" value="2024-12-01">
                     </label>
-                    <label class="booking__input">
+                    <label class="booking__input booking__input--width">
                         <h3 class="booking__input-title">Slutdatum</h3>   
                         <input type="date" class="booking__input-box" value="2024-12-05">
                     </label>
-                    <label class="booking__input">
+                    <label class="booking__input booking__input--width">
                         <h3 class="booking__input-title">Vuxna</h3>   
                         <input type="number" class="booking__input-box" min="0" value="2">
                     </label>
-                    <label class="booking__input">
+                    <label class="booking__input booking__input--width">
                         <h3 class="booking__input-title">Barn (0-15 år)</h3>   
                         <input type="number" class="booking__input-box" min="0" value="1">
                     </label>
@@ -56,27 +55,104 @@
             </form>
         </aside>
         
-        <section class="room">
-            <section class="room__card">
-                <img class="room__image" src="assets/photos/01-day.jpg" alt="">
+        <section class="">
+            <h1>Välj rum</h1>
+            <section class="room">
+                <section class="room__card">
+                    <figure class="room__gallery">
+                        <img class="room__image room__image--large" src="assets/photos/02-day.jpg" alt="Standard room image view">
+                        <img class="room__image" src="assets/photos/01-day.jpg" alt="Standard room image desk">
+                        <img class="room__image" src="assets/photos/03-day.jpg" alt="Standard room image view from bed">
+                        <img class="room__image" src="assets/photos/04-day.jpg" alt="Standard room image bed">
+                    </figure>
                 <section class="room__info">
-                    <h2 class="room__title">Room title</h2>
-                    <p class="room__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quam eos voluptas odit.</p>
-                    <ul class="room__list">
-                        <li class="room__list-item">Privat entre</li>
-                        <li class="room__list-item">Dusch</li>
-                        <li class="room__list-item">Minibar</li>
-                        <li class="room__list-item">Egen AI-assistent</li>
-                        <li class="room__list-item">Gratis WiFi</li>
-                        <li class="room__list-item">Egen bastu</li>
-                        <li class="room__list-item">Eget kök</li>
-                        <li class="room__list-item">Vy mot solnedgång</li>
-                        <li class="room__list-item">Egen balkong</li>
-                        <li class="room__list-item">Dygnet runt service</li>
-                        <li class="room__list-item">Dubbelsäng</li>
-                    </ul>
+                    <section class="room__titles">
+                        <h2 class="room__head-title">Standard</h2>
+                        <h3 class="room__sub-title">Dubbelsäng</h3>
+                    </section>
+
+                    <p class="room__description">Vårt Standardrum med dubbelsäng kombinerar modern teknologi med en bekväm och lyxig miljö. Med en egen AI-assistent som alltid är redo att hjälpa dig oavsett om det handlar om att anpassa rumsbelysningen, boka aktiviteter eller svara på frågor.
+                    </p>
+                    <p class="room__description">
+                    Rummet erbjuder också en privat balkong med utsikt över solnedgången, en bekväm dubbelsäng och gratis WiFi. Perfekt för både avkoppling och produktivitet, med alla bekvämligheter du behöver för en minnesvärd vistelse.
+                    </p>
+                    <h4>Bekvämligheter</h4>
+                    <section class="room__list">
+                        <ul class="room__list-box">
+                            <li class="room__list-item">Privat entre</li>
+                            <li class="room__list-item">Dusch</li>
+                            <li class="room__list-item">Minibar</li>
+                            <li class="room__list-item">Egen AI-assistent</li>
+                            <li class="room__list-item">Gratis WiFi</li>
+                        </ul>
+
+                        <ul class="room__list-bo">
+                            <li class="room__list-item">Eget kök</li>
+                            <li class="room__list-item">Vy mot solnedgång</li>
+                            <li class="room__list-item">Egen balkong</li>
+                            <li class="room__list-item">Dygnet runt service</li>
+                            <li class="room__list-item">Dubbelsäng</li>
+                        </ul>
+                    </section>
+                    <hr>
+                    <section class="room__btn">
+                        <section class="price">
+                            <h2>Totalt 940 kr</h2>
+                            <h3>Inkl. skatter och avgifter</h3>
+                        </section>
+                        <button class="room__book-btn btn">BOKA NU</button>
+                    </section>
                 </section>
             </section>
+            </section>     
+            <section class="room">
+                <section class="room__card">
+                    <figure class="room__gallery">
+                        <img class="room__image room__image--large" src="assets/photos/02-day.jpg" alt="Standard room image view">
+                        <img class="room__image" src="assets/photos/01-day.jpg" alt="Standard room image desk">
+                        <img class="room__image" src="assets/photos/03-day.jpg" alt="Standard room image view from bed">
+                        <img class="room__image" src="assets/photos/04-day.jpg" alt="Standard room image bed">
+                    </figure>
+                <section class="room__info">
+                    <section class="room__titles">
+                        <h2 class="room__head-title">Standard</h2>
+                        <h3 class="room__sub-title">Dubbelsäng</h3>
+                    </section>
+
+                    <p class="room__description">Vårt Standardrum med dubbelsäng kombinerar modern teknologi med en bekväm och lyxig miljö. Med en egen AI-assistent som alltid är redo att hjälpa dig oavsett om det handlar om att anpassa rumsbelysningen, boka aktiviteter eller svara på frågor.
+                    </p>
+                    <p class="room__description">
+                    Rummet erbjuder också en privat balkong med utsikt över solnedgången, en bekväm dubbelsäng och gratis WiFi. Perfekt för både avkoppling och produktivitet, med alla bekvämligheter du behöver för en minnesvärd vistelse.
+                    </p>
+                    <h4>Bekvämligheter</h4>
+                    <section class="room__list">
+                        <ul class="room__list-box">
+                            <li class="room__list-item">Privat entre</li>
+                            <li class="room__list-item">Dusch</li>
+                            <li class="room__list-item">Minibar</li>
+                            <li class="room__list-item">Egen AI-assistent</li>
+                            <li class="room__list-item">Gratis WiFi</li>
+                        </ul>
+
+                        <ul class="room__list-bo">
+                            <li class="room__list-item">Eget kök</li>
+                            <li class="room__list-item">Vy mot solnedgång</li>
+                            <li class="room__list-item">Egen balkong</li>
+                            <li class="room__list-item">Dygnet runt service</li>
+                            <li class="room__list-item">Dubbelsäng</li>
+                        </ul>
+                    </section>
+                    <hr>
+                    <section class="room__btn">
+                        <section class="price">
+                            <h2>Totalt 940 kr</h2>
+                            <h3>Inkl. skatter och avgifter</h3>
+                        </section>
+                        <button class="room__book-btn btn">BOKA NU</button>
+                    </section>
+                </section>
+            </section>
+            </section>       
         </section>
     </main>
 
