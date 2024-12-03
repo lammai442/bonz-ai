@@ -21,6 +21,10 @@
     --animation-timing: 200ms ease-in-out;
 }
 
+h1,h2, h3, p {
+    color: var(--primary-text-color);
+}
+
 /* BODY - LANDING PAGE*/
 body {
     background-color: var(--lightest-green-bg-color);
@@ -70,7 +74,11 @@ body {
 
 .header__links {
     text-decoration: none;
-    color: white;
+    color: var(--primary-text-color);
+}
+
+.header__links:hover {
+    color: var(--secondary-text-color);
 }
 
 .header__links--active {
@@ -384,10 +392,13 @@ body {
 }
 
 .room__review {
+    padding: .5rem 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: .5rem;
+    border-radius: 10px;
+    border: 1px solid var(--dark-green-bg-color);
 }
 
 .room__icon {
@@ -518,9 +529,9 @@ body {
         display: block;
     }
 
-    .header__hamburger-menu:checked ~ .btn {
-        display: block;
-        align-self: flex-end;
+    .header__hamburger-menu:checked ~ .header__navigation > .header__nav-list > .header__nav-titles--border-bottom:last-child {
+        display: flex;
+        justify-content: end;
     }  
 
     /* MQ 990PX - LANDING PAGE*/
