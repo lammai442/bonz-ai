@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <!-- HEADER -->
+    <!-- HEADER - ABOUT BONZAI PAGE -->
     <header class="header">
         <figure class="logo">
             <a href="index.html" class="header__favicon">
@@ -23,7 +23,8 @@
         <nav class="header__navigation">
             <ul class="header__nav-list">
                 <li class="header__nav-titles">
-                    <a href="about-bonzai.html" class="header__links header__links--active">OM BONZ.AI</a></li>
+                    <a href="about-bonzai.html" class="header__links header__links--active">OM BONZ.AI</a>
+                </li>
                 <li class="header__nav-titles">
                     <a href="ai.html" class="header__links">AI</a>
                 </li>
@@ -36,13 +37,10 @@
             </ul>
         </nav>
 
-        <a href="booking-room.html" class="btn">BOKA RUM</a>
-        
-        <!-- <button class="btn">BOKA RUM</button> -->
-    
+        <a href="booking-room.html" class="btn">BOKA RUM</a>    
     </header>
     
-    <!-- WRAPPER -->
+    <!-- WRAPPER - ABOUT BONZAI PAGE -->
     <main class="wrapper">
         <section class="content">
             <img class="hero__image" src="assets/photos/facility/bonsai-hotel.jpg" alt="Image of the Hotel Bonzai">
@@ -72,14 +70,15 @@
         </section>
     </main>
 
-    <!-- FOOTER - ABOUT PAGE -->
-    <footer class="footer">
-        <figure class="logo logo--larger logo--center">
+    <!-- FOOTER - ABOUT BONZAI PAGE -->
+    <footer class="footer grid-wrapping">
+        <figure class="footer__logo grid-wrapping__span-two grid-wrapping__span-full" aria-label="Bonz.ai logo">
             <a href="index.html" class="header__favicon">
                 <img src="assets/logo/bonz.ai-logo-white-portrait.png" alt="logo" class="logo__favicon">
             </a>
         </figure>
-        <section class="footer__text">
+
+        <section class="footer__text grid-wrapping__span-two grid-wrapping__span-full">
             <h2 class="footer__title">Bonz.AI hotel</h2>
             <p class="footer__contact-text">
                 By 80<br>
@@ -95,7 +94,42 @@
             </section>
         </section>
 
-        <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64055.63902158073!2d12.988436222076409!3d59.88668696960804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464320da325046bd%3A0xb8b6d14d9b43dcd6!2sHotell%20Frykenstrand%2C%20Sure%20Hotel%20Collection%20by%20Best%20Western!5e0!3m2!1ssv!2sse!4v1732962781687!5m2!1ssv!2sse" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="footer__media-links grid-wrapping__span-two grid-wrapping__span-full">
+            <h2 class="footer__title">Medialänkar</h2>
+            <figure class="footer_link-box">
+                <a 
+                    href="" 
+                    class="footer__links" 
+                    aria-label="Link to Bonz.ai facebook">
+                        <img
+                            class="footer__link-image" 
+                            src="assets/icons/facebook.png" alt="Facebook link icon">
+                </a>
+                <a 
+                    href=""
+                    class="footer__links" 
+                    aria-label="Link to Bonz.ai instagram">
+                    <img 
+                        class="footer__link-image"
+                        src="assets/icons/instagram.png" alt="Instagram link icon">
+                </a>
+                <a 
+                    href="" 
+                    class="footer__links" 
+                    aria-label="Link to green key">
+                    <img
+                        class="footer__link-image" 
+                        src="assets/icons/Green-Key-Logo.png" alt="Green Key link icon">
+                </a>
+            </figure>
+        </section>
+
+        <iframe 
+            class="footer__map grid-wrapping__span-two grid-wrapping__span-full"
+            aria-label="Map direction to hotell with Google maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64055.63902158073!2d12.988436222076409!3d59.88668696960804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464320da325046bd%3A0xb8b6d14d9b43dcd6!2sHotell%20Frykenstrand%2C%20Sure%20Hotel%20Collection%20by%20Best%20Western!5e0!3m2!1ssv!2sse!4v1732962781687!5m2!1ssv!2sse"  
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </footer>
 </body>
 </html>
