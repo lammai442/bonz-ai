@@ -9,22 +9,22 @@
 					"label": ""
 				},
 				{
-					"line": 87,
+					"line": 90,
 					"column": 9,
 					"label": ""
 				},
 				{
-					"line": 107,
+					"line": 110,
 					"column": 19,
 					"label": ""
 				},
 				{
-					"line": 155,
+					"line": 158,
 					"column": 13,
 					"label": ""
 				},
 				{
-					"line": 169,
+					"line": 172,
 					"column": 12,
 					"label": ""
 				}
@@ -54,28 +54,18 @@
 			"path": "style/styles.css",
 			"bookmarks": [
 				{
-					"line": 0,
-					"column": 6,
-					"label": ""
-				},
-				{
-					"line": 7,
+					"line": 12,
 					"column": 4,
 					"label": ""
 				},
 				{
-					"line": 32,
+					"line": 39,
 					"column": 10,
 					"label": ""
 				},
 				{
-					"line": 113,
+					"line": 123,
 					"column": 14,
-					"label": ""
-				},
-				{
-					"line": 145,
-					"column": 13,
 					"label": ""
 				},
 				{
@@ -84,57 +74,62 @@
 					"label": ""
 				},
 				{
-					"line": 191,
-					"column": 4,
-					"label": ""
-				},
-				{
-					"line": 221,
-					"column": 8,
-					"label": ""
-				},
-				{
-					"line": 295,
-					"column": 4,
-					"label": ""
-				},
-				{
-					"line": 325,
+					"line": 165,
 					"column": 13,
 					"label": ""
 				},
 				{
-					"line": 340,
+					"line": 201,
+					"column": 4,
+					"label": ""
+				},
+				{
+					"line": 231,
+					"column": 8,
+					"label": ""
+				},
+				{
+					"line": 300,
+					"column": 4,
+					"label": ""
+				},
+				{
+					"line": 342,
+					"column": 13,
+					"label": ""
+				},
+				{
+					"line": 357,
 					"column": 18,
 					"label": ""
 				},
 				{
-					"line": 431,
+					"line": 452,
 					"column": 9,
 					"label": ""
 				},
 				{
-					"line": 477,
+					"line": 509,
 					"column": 6,
 					"label": ""
 				},
 				{
-					"line": 536,
+					"line": 573,
 					"column": 14,
 					"label": ""
 				},
 				{
-					"line": 565,
+					"line": 602,
 					"column": 26,
 					"label": ""
 				},
 				{
-					"line": 576,
+					"line": 613,
 					"column": 24,
 					"label": ""
 				},
 				{
-					"line": 578,
+					"line": 615,
 					"column": 22,
 					"label": ""
 				}
@@ -149,17 +144,17 @@
 					"label": ""
 				},
 				{
-					"line": 30,
+					"line": 32,
 					"column": 32,
 					"label": ""
 				},
 				{
-					"line": 33,
+					"line": 35,
 					"column": 32,
 					"label": ""
 				},
 				{
-					"line": 61,
+					"line": 63,
 					"column": 17,
 					"label": ""
 				}

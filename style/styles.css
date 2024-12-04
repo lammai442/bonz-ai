@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* DEFAULT SETTINGS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 /* COLORS */
 :root {
@@ -16,7 +21,9 @@
     --secondary-text-color: #fff;
 
     /* FONTS */
-    --primary-font: "Roboto";
+    --primary-font: "Montserrat", sans-serif;
+
+
 
     --animation-timing: 200ms ease-in-out;
 }
@@ -58,7 +65,7 @@ body {
 }
 
 .header__nav-titles {
-    padding: 1rem;
+    /* padding: 1rem; */
     font-size: 1.5rem;
     color: var(--secondary-text-color);
     cursor: pointer;
@@ -73,8 +80,11 @@ body {
 }
 
 .header__links {
+    display: inline-block;
+    padding: 1rem;
     text-decoration: none;
     color: var(--primary-text-color);
+    font-family: var(--primary-font);
 }
 
 .header__links:hover {
@@ -245,7 +255,7 @@ body {
 .footer_link-box {
     display: flex;
     flex-direction: row;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 .footer__links {
@@ -258,11 +268,6 @@ body {
 }
 
 .footer__links:hover {
-    background-color: red;
-    cursor: pointer;
-}
-.footer__link-image:hover {
-    background-color: red;
     cursor: pointer;
 }
 
@@ -322,6 +327,18 @@ body {
     width: 50%;
     border-radius: 10px;
 }
+
+/* HEADER - BOOOKING ROOM PAGE */
+.header--grid {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.header__navigation--center {
+    justify-self: center;
+}
+
+
 
 /* WRAPPER - BOOKING ROOM PAGE */
 .wrapper--gap {
@@ -429,6 +446,10 @@ body {
     text-align: end;
 }
 
+.room__list-item {
+    /* vertical-align: middle; */
+}
+
 /* MEDIA QUERIES - MAX WIDTH 990PX */
 @media screen and (max-width: 990px) {
     /*  MQ 990PX - ALL PAGES */
@@ -439,15 +460,16 @@ body {
     .header {
         flex-direction: column;
         align-items: flex-start;
+        position: relative;
     }
 
     .header > .btn {
         display: none;
     }
-    
+/*     
     .header__navigation {
         width: 100%;
-    }
+    } */
     
     .header__hamburger-btn {
         z-index: 999;
@@ -457,15 +479,25 @@ body {
         right: 1.5rem;
     }
 
-    .header__nav-list {
+    .header__navigation {
         width: 100%;
-        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        text-align: right;
+        background-color: var(--light-green-bg-color);
+        transform: translateX(110%);
+        transition: all .3s ease-in-out;
+    }
+
+    .header__nav-list {
+        
         flex-direction: column;
     }
 
     .header__nav-titles {
         width: 100%;
-        transform: translateX(110%);
+        /* transform: translateX(110%); */
         border-top: 1px solid var(--darkest-green-bg-color);
     }
 
@@ -509,16 +541,19 @@ body {
     }
 
     .header__hamburger-menu:checked ~ .header__navigation {
-        margin: 1.5rem 0 8rem 0;
+        margin: 0 0 8rem 0;
+        transform: translateX(0);
+        height: 100vh;
     }
 
     .header__hamburger-menu:checked ~ .header__navigation > .header__nav-list {
         display: block;
+        height: auto;
     }
 
     .header__hamburger-menu:checked ~ .header__navigation > .header__nav-list > .header__nav-titles {
         transform: translateX(0);
-        transition: transform 1s ease-in-out;
+        transition: all 1s ease-in-out;
         text-align: end;
         justify-self: end;
         width: 100%;
@@ -533,7 +568,9 @@ body {
         display: flex;
         justify-content: end;
     }  
-
+    .header__hamburger-menu:checked ~ .header__navigation > .header__nav-list > .header__nav-titles--more-margin {
+            padding: 1.5rem 1rem;
+    }
     /* MQ 990PX - LANDING PAGE*/
     .hero__image-box,
     .hero__description {
