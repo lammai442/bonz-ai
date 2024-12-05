@@ -8,65 +8,91 @@
 </head>
 <body>
     <!-- HEADER - ABOUT BONZAI PAGE -->
-    <header class="header">
-        <figure class="logo">
-            <a href="index.html" class="header__favicon">
-                <img src="assets/logo/bonz.ai-logo-white-portrait.png" alt="logo" class="logo__favicon">
+  <!-- HEADER -->
+  <header class="header">
+    <figure class="logo" aria-label="Bonz.ai logo">
+      <a href="index.html" class="header__favicon">
+        <img
+            src="assets/logo/bonz.ai-logo-white-portrait.png"
+            alt="logo"
+            class="logo__favicon"
+        />
+      </a>
+    </figure>
+
+    <input
+        type="checkbox"
+        class="header__hamburger-menu"
+        id="hamburger-menu"
+        aria-label="Öppna huvudmeny"
+        tabindex="-1"
+    />
+    <label 
+        class="header__hamburger-btn" for="hamburger-menu" 
+        tabindex="0"
+        aria-label="Huvudmeny öppen">
+      <span></span>
+    </label>
+
+    <nav class="header__navigation">
+      <ul class="header__nav-list">
+        <li class="header__nav-titles">
+            <a 
+                href="about-bonzai.html" class="header__links header__links--active">
+                OM BONZ.AI
             </a>
-        </figure>
-        
-        <input type="checkbox" class="header__hamburger-menu" id="hamburger-menu">
-        <label class="header__hamburger-btn" for="hamburger-menu">
-            <span></span>
-        </label>
-
-        <nav class="header__navigation">
-            <ul class="header__nav-list">
-                <li class="header__nav-titles">
-                    <a href="about-bonzai.html" class="header__links header__links--active">OM BONZ.AI</a>
-                </li>
-                <li class="header__nav-titles">
-                    <a href="ai.html" class="header__links">AI</a>
-                </li>
-                <li class="header__nav-titles">
-                    <a href="eat-and-drink.html" class="header__links">ÄT & DRICK</a>
-                </li>
-                <li class="header__nav-titles header__nav-titles--border-bottom">
-                    <a href="rooms.html" class="header__links">VÅRA RUM</a>
-                </li>
-            </ul>
-        </nav>
-
-        <a href="booking-room.html" class="btn">BOKA RUM</a>    
-    </header>
+        </li>
+        <li class="header__nav-titles">
+          <a href="ai.html" class="header__links">DIN AI</a>
+        </li>
+        <li class="header__nav-titles">
+          <a href="eat-and-drink.html" class="header__links">ÄT & DRICK</a>
+        </li>
+        <li class="header__nav-titles">
+          <a href="rooms.html" class="header__links">VÅRA RUM</a>
+        </li>
+        <li class="header__nav-titles header__nav-titles--more-margin">
+          <a href="booking-room.html" class="btn">BOKA RUM</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
     
     <!-- WRAPPER - ABOUT BONZAI PAGE -->
     <main class="wrapper">
-        <section class="content">
-            <img class="hero__image" src="assets/photos/facility/bonsai-hotel.jpg" alt="Image of the Hotel Bonzai">
-            <h1 class="content__title">Bonz.ai hotell</h1>
-            <p>
-                I hjärtat av den teknologiska och hållbara framtiden ligger Bonz.ai, ett banbrytande hotell där innovation och natur förenas på ett unikt sätt. Vi är ett futuristiskt hotell som erbjuder en förstklassig upplevelse med en grön livsstil i fokus. På Bonz.ai är varje aspekt av din vistelse designad för att skapa en harmonisk balans mellan teknik och natur och från vårt AI-drivna rum till de hållbara lösningarna i varje hörn av hotellet.
-            </p>
-            <section class="gallery">
-                <img class="gallery__img" src="assets/photos/facility/hallway.jpg" alt="Image of hotel hallway">
-                <img class="gallery__img" src="assets/photos/facility/bonsai-reception.jpg" alt="Image of hotel reception">
-                <img class="gallery__img" src="assets/photos/facility/conference.jpg" alt="Image of hotel conference room">
-                <img class="gallery__img" src="assets/photos/facility/playground.jpg" alt="Image of hotel playground">
-                <img class="gallery__img" src="assets/photos/facility/cinema.jpg" alt="Image of hotel cinema">
-                <img class="gallery__img" src="assets/photos/facility/dinner-room.jpg" alt="Image of hotel dinner room">
+        <section class="image-info__block image-info__block--column">            
+            <section class="image-info__block image-info__block--column">
+                <img class="hero__image" src="assets/photos/facility/bonsai-hotel.jpg" alt="Image of the Hotel Bonzai">
+                <h1 class="content__title">Bonz.ai hotell</h1>
+                <p>
+                    I hjärtat av den teknologiska och hållbara framtiden ligger Bonz.ai, ett banbrytande hotell där innovation och natur förenas på ett unikt sätt. Vi är ett futuristiskt hotell som erbjuder en förstklassig upplevelse med en grön livsstil i fokus. På Bonz.ai är varje aspekt av din vistelse designad för att skapa en harmonisk balans mellan teknik och natur och från vårt AI-drivna rum till de hållbara lösningarna i varje hörn av hotellet.
+                </p>
             </section>
-            <h2 class="content__sub-title">En futurisk miljö</h2>
-            <p>
-                Hotel Bonz.ai erbjuder 120 stiliga rum, varav varje är utrustat med den senaste tekniken för att ge våra gäster en personlig och effektiv upplevelse. Här hittar du även en frukostlounge där vi serverar hållbara och växtbaserade alternativ, samt en konferensavdelning för framtidens möten. Allt för att ge dig den bästa upplevelsen med både komfort och ansvar.
-            </p>
-            <figure class="hero__image">
-                <img class="hero__image" src="assets/photos/facility/bonsai-tree1.jpg" alt="Image of a bonsai tree">
-            </figure>
-            <h2 class="content__sub-title">Byggd efter Bonsai struktur</h2>
-            <p>
-                Namnet Bonz.ai speglar vår vision av det lilla, starka trädet – bonsaiträdet – som representerar tålamod, balans och hållbar tillväxt. Vårt hotell är inte bara en plats att bo, utan en plats för reflektion och en påminnelse om den nödvändiga balansen mellan teknologi och natur.
-            </p>
+            <section class="image-info__block image-info__block--column">
+                <section class="gallery">
+                    <img class="gallery__img" src="assets/photos/facility/hallway.jpg" alt="Image of hotel hallway">
+                    <img class="gallery__img" src="assets/photos/facility/bonsai-reception.jpg" alt="Image of hotel reception">
+                    <img class="gallery__img" src="assets/photos/facility/conference.jpg" alt="Image of hotel conference room">
+                    <img class="gallery__img" src="assets/photos/facility/playground.jpg" alt="Image of hotel playground">
+                    <img class="gallery__img" src="assets/photos/facility/cinema.jpg" alt="Image of hotel cinema">
+                    <img class="gallery__img" src="assets/photos/facility/dinner-room.jpg" alt="Image of hotel dinner room">
+                </section>
+                <h2 class="content__sub-title">En futurisk miljö</h2>
+                <p>
+                    Hotel Bonz.ai erbjuder 120 stiliga rum, varav varje är utrustat med den senaste tekniken för att ge våra gäster en personlig och effektiv upplevelse. Här hittar du även en frukostlounge där vi serverar hållbara och växtbaserade alternativ, samt en konferensavdelning för framtidens möten. Allt för att ge dig den bästa upplevelsen med både komfort och ansvar.
+                </p>
+                
+            </section>
+            <section class="image-info__block image-info__block--column">
+                <figure class="hero__image">
+                    <img class="hero__image" src="assets/photos/facility/bonsai-tree1.jpg" alt="Image of a bonsai tree">
+                </figure>
+                <h2 class="content__sub-title">Byggd efter Bonsai struktur</h2>
+                <p>
+                    Namnet Bonz.ai speglar vår vision av det lilla, starka trädet – bonsaiträdet – som representerar tålamod, balans och hållbar tillväxt. Vårt hotell är inte bara en plats att bo, utan en plats för reflektion och en påminnelse om den nödvändiga balansen mellan teknologi och natur.
+                </p>    
+            </section>
+            
         </section>
     </main>
 
