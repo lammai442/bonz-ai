@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* DEFAULT SETTINGS */
 * {
@@ -19,11 +19,22 @@
 
     /* FONTS */
     --primary-font: "Montserrat", sans-serif;
+    --secondar-font: "Roboto"; 
 }
 
 /* GENERIC UTILITIES */
-h1,h2, h3, p {
+h1,h2, h3 {
     color: var(--primary-text-color);
+    font-family: var(--primary-font);
+}
+
+p {
+    font-family: var(--secondar-font);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* BODY - LANDING PAGE*/
@@ -52,7 +63,6 @@ body {
 }
 
 .header__nav-list {
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,6 +73,10 @@ body {
     font-size: 1.5rem;
     color: var(--secondary-text-color);
     cursor: pointer;
+}
+
+.header__nav-titles--padding {
+    padding-left: 1rem;
 }
 
 .header__nav-titles:hover {
@@ -76,9 +90,9 @@ body {
 .header__links {
     display: inline-block;
     padding: 1rem;
-    text-decoration: none;
     color: var(--primary-text-color);
     font-family: var(--primary-font);
+    font-weight: 500;
 }
 
 .header__links:hover {
@@ -104,6 +118,7 @@ body {
     padding: 1rem 1.5rem;
     border-radius: 10px;
     text-decoration: none;
+    font-family: var(--primary-font);
 }
 
 .btn:hover {
@@ -145,6 +160,7 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
+    letter-spacing: .1rem;
 }
 
 .hero__title {
@@ -227,7 +243,7 @@ body {
 
 .image-info__block--column {
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .image-info__text {
@@ -298,6 +314,10 @@ body {
     gap: .5rem;
 }
 
+.footer__title {
+    font-size: 1.3rem;
+}
+
 .footer__contact {
     display: flex;
     flex-direction: row;
@@ -324,15 +344,23 @@ body {
     text-align: center;
 }
 
+.content__title {
+    font-size: 1.5rem;
+}
+
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
     gap: 1rem;
 }
 
 .gallery__img {
     width: 100%;
     border-radius: 10px;
+}
+
+.gallery--two-column {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .circle {
@@ -346,7 +374,7 @@ body {
     border-radius: 10px;
 }
 
-/* DIN AI PAGE */
+/* PAGE - DIN AI PAGE */
 .slider {
     position: relative;
 } 
@@ -360,6 +388,7 @@ body {
     scroll-behavior: smooth; /* MAKES THE ANIMATION SMOOTH */
     box-shadow: 0 15px 20px -12px rgba(0, 0, 0, .25);
     overflow-x: hidden; /* HIDE THE HORIZONTAL SCROLLBAR */
+    border-radius: 10px;
 }
 
 .slider__img {
@@ -472,15 +501,16 @@ body {
 .room__review {
     padding: .5rem 1rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: .5rem;
     border-radius: 10px;
     border: 1px solid var(--dark-green-bg-color);
 }
 
-.room__icon {
-    width: 35px;
+.room__star {
+    display: flex;
+    flex-direction: row;
+    color: var(--dark-green-bg-color);
 }
 
 .room__list {
@@ -605,7 +635,7 @@ body {
 
     .header__hamburger-menu:checked ~ .header__navigation > .header__nav-list > .header__nav-titles {
         transform: translateX(0);
-        transition: all 1s ease-in-out;
+        transition: all .3s ease-in-out;
         text-align: end;
         justify-self: end;
         width: 100%;
@@ -653,7 +683,6 @@ body {
     .image-info__block--wrap-reverse {
         flex-direction: column-reverse;
     }
-    /* MQ 990PX - ABOUT BONZAI PAGE */
 
     /* MQ 990PX - BOOKING ROOM PAGE */    
     .room__card {
@@ -664,16 +693,46 @@ body {
         flex: none; /* INACTIVE THE FLEX RULE */
         width: 100%;
     }
+
+    .price h2, h3 {
+        font-size: 1.1rem;
+    }
 }
 
 /* MEDIA QUERIES - MAX WIDTH 550PX */
 @media screen and (max-width: 550px) {
     /* MQ 550PX - FOOTER */
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(198px, 1fr));
+    }
+
+    .gallery--two-column {
+        grid-template-columns: 1fr;
+    }
+
     .grid-wrapping__span-full {
         grid-column: auto / span 4;
     }
 
     .slider__navigation {
         bottom: .5rem;
+    }
+
+    .room {
+        padding: .7rem;
+    }
+
+    .price h2, h3 {
+        font-size: .8rem;
+    }
+
+    .price, h2, h3 {
+        flex: 6;
+    }
+
+    .room__book-btn {
+        flex:6;
+        padding: 0.3rem .5rem;
+        font-size: 1rem;
     }
 }

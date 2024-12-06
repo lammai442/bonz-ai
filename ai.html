@@ -7,88 +7,86 @@
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <!-- HEADER - ABOUT BONZAI PAGE -->
-  <!-- HEADER -->
-  <header class="header">
-    <figure class="logo" aria-label="Bonz.ai logo">
-      <a href="index.html" class="header__favicon">
-        <img
-            src="assets/logo/bonz.ai-logo-white-portrait.png"
-            alt="logo"
-            class="logo__favicon"
+    <!-- HEADER - DIN AI PAGE -->
+    <header class="header">
+        <figure class="logo" aria-label="Bonz.ai logo">
+        <a href="index.html" class="header__favicon">
+            <img
+                src="assets/logo/bonz.ai-logo-white-portrait.png"
+                alt="logo"
+                class="logo__favicon"
+            />
+        </a>
+        </figure>
+
+        <input
+            type="checkbox"
+            class="header__hamburger-menu"
+            id="hamburger-menu"
+            aria-label="Öppna huvudmeny"
+            tabindex="-1"
         />
-      </a>
-    </figure>
+        <label 
+            class="header__hamburger-btn" for="hamburger-menu" 
+            tabindex="0"
+            aria-label="Huvudmeny öppen">
+        <span></span>
+        </label>
 
-    <input
-        type="checkbox"
-        class="header__hamburger-menu"
-        id="hamburger-menu"
-        aria-label="Öppna huvudmeny"
-        tabindex="-1"
-    />
-    <label 
-        class="header__hamburger-btn" for="hamburger-menu" 
-        tabindex="0"
-        aria-label="Huvudmeny öppen">
-      <span></span>
-    </label>
-
-    <nav class="header__navigation">
-      <ul class="header__nav-list">
-        <li class="header__nav-titles">
-            <a 
-                href="about-bonzai.html" class="header__links">
-                OM BONZ.AI
-            </a>
-        </li>
-        <li class="header__nav-titles">
-          <a href="ai.html" class="header__links header__links--active">DIN AI</a>
-        </li>
-        <li class="header__nav-titles">
-          <a href="eat-and-drink.html" class="header__links">ÄT & DRICK</a>
-        </li>
-        <li class="header__nav-titles">
-          <a href="rooms.html" class="header__links">VÅRA RUM</a>
-        </li>
-        <li class="header__nav-titles header__nav-titles--more-margin">
-          <a href="booking-room.html" class="btn">BOKA RUM</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        <nav class="header__navigation">
+        <ul class="header__nav-list">
+            <li class="header__nav-titles">
+                <a 
+                    href="about-bonzai.html" class="header__links">
+                    OM BONZ.AI
+                </a>
+            </li>
+            <li class="header__nav-titles">
+            <a href="ai.html" class="header__links header__links--active">DIN AI</a>
+            </li>
+            <li class="header__nav-titles">
+            <a href="eat-and-drink.html" class="header__links">ÄT & DRICK</a>
+            </li>
+            <li class="header__nav-titles header__nav-titles--more-margin header__nav-titles--padding">
+                <a href="booking-room.html" class="btn">BOKA RUM</a>
+            </li>
+        </ul>
+        </nav>
+    </header>
     
-    <!-- WRAPPER - ABOUT BONZAI PAGE -->
+    <!-- MAIN - DIN AI PAGE -->
     <main class="wrapper">
         <section class="image-info__block image-info__block--column">            
             <section class="image-info__block image-info__block--column">
                 <section class="slider">
                     <figure class="slider__frame">
-                        <img id="slide-1" class="slider__img" src="assets/photos/facility/bonsai-hotel.jpg" alt="Image of the Hotel Bonzai">
-                        <img id="slide-2" class="slider__img" src="assets/photos/facility/boat-fishing.jpg" alt="Image of the Hotel Bonzai">
-                        <img id="slide-3" class="slider__img" src="assets/photos/facility/bonsai-hotel.jpg" alt="Image of the Hotel Bonzai">
+                        <img id="slide-1" class="slider__img" src="assets/photos/robots/ai-assistent2.jpg" alt="Image of AI assistent holding bonsai tree">
+                        <img id="slide-2" class="slider__img" src="assets/photos/robots/ai-assistent1.jpg" alt="Image of AI assistent in hotel room">
+                        <img id="slide-3" class="slider__img" src="assets/photos/robots/ai-assistent3.jpg" alt="Image of AI assistent holding bonsai tree in different room">
                     </figure>
-                    <div class="slider__navigation">
-                            <a class="slider__nav-links" href="#slide-1"></a>
-                            <a class="slider__nav-links" href="#slide-2"></a>
-                            <a class="slider__nav-links" href="#slide-3"></a>
-                    </div>
+                    <nav class="slider__navigation">
+                            <a class="slider__nav-links" href="#slide-1" aria-label="Image slider image one"></a>
+                            <a class="slider__nav-links" href="#slide-2" aria-label="Image slider image two"></a>
+                            <a class="slider__nav-links" href="#slide-3" aria-label="Image slider image three"></a>
+                    </nav>
                 </section>
-
-                <h1 class="content__title">Innovativa AI-assistenter för din vistelse</h1>
-                <p>
-                    På Bonz.ai introducerar vi en helt ny nivå av personlig service genom våra avancerade AI-robotar. Dessa smarta assistenter är designade för att förvandla din hotellupplevelse till något utöver det vanliga. Från att välkomna dig vid ankomst till att hjälpa dig planera din dag, erbjuder våra AI-robotar en sömlös kombination av service och teknik. De kan svara på dina frågor, ge rekommendationer om lokala aktiviteter och restauranger, samt anpassa sina tjänster efter dina specifika behov.
-                </p>
-
-                <h1 class="content__title">Service med en personlig touch</h1>
-                <p>
-                    Våra AI-assistenter är inte bara smarta – de är också programmerade för att känna av och anpassa sig till din unika stil. Behöver du hjälp med att boka ett bord för middag, anpassa rumsbelysningen eller få uppdateringar om vädret? Med en enkel fråga eller röstkommando är de redo att assistera dygnet runt. På Bonz.ai är vårt mål att kombinera det bästa av teknologi och omtanke för att ge dig en upplevelse som är både bekväm och minnesvärd.
-                </p>
+                <section class="image-info__text">
+                    <h1 class="content__title">Innovativa AI-assistenter för din vistelse</h1>
+                    <p>
+                        På Bonz.ai introducerar vi en helt ny nivå av personlig service genom våra avancerade AI-robotar. Dessa smarta assistenter är designade för att förvandla din hotellupplevelse till något utöver det vanliga. Från att välkomna dig vid ankomst till att hjälpa dig planera din dag, erbjuder våra AI-robotar en sömlös kombination av service och teknik. De kan svara på dina frågor, ge rekommendationer om lokala aktiviteter och restauranger, samt anpassa sina tjänster efter dina specifika behov.
+                    </p>
+                </section>
+                <section class="image-info__text">
+                    <h2 class="content__title">Service med en personlig touch</h2>
+                    <p>
+                        Våra AI-assistenter är inte bara smarta – de är också programmerade för att känna av och anpassa sig till din unika stil. Behöver du hjälp med att boka ett bord för middag, anpassa rumsbelysningen eller få uppdateringar om vädret? Med en enkel fråga eller röstkommando är de redo att assistera dygnet runt. På Bonz.ai är vårt mål att kombinera det bästa av teknologi och omtanke för att ge dig en upplevelse som är både bekväm och minnesvärd.
+                    </p>
+                </section>
             </section>
         </section>
     </main>
 
-    <!-- FOOTER - ABOUT BONZAI PAGE -->
+    <!-- FOOTER -DIN AI PAGE -->
     <footer class="footer grid-wrapping">
         <figure class="footer__logo grid-wrapping__span-two grid-wrapping__span-full" aria-label="Bonz.ai logo">
             <a href="index.html" class="header__favicon">

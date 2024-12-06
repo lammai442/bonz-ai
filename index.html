@@ -6,8 +6,13 @@
     <title>Bonz.ai - Ditt hållbara futuristiska hotell</title>
     <link rel="stylesheet" href="style/styles.css">
 </head>
+
+<!-- ALL IMAGES ARE SAVED FROM WWW.DEEPAI.ORG -->
+<!-- ICONS ARE SAVED FROM WWW.FONTAWESOME.COM -->
+<!-- WAVE/LIGHTHOUSE GIVES ERROR FOR BUTTON COLOR WITH CONTRAST ERROR WITH TOO LOW CONTRAST WITH WHITE COLOR AND GREEN COLOR BUT IT IS CLEARED WITH WCAG AA STANDARD OF A RATIO OF 4.03 AND LIMIT IS 4.5 FOR AAA. I CAN SEE A CLEAR CONTRAST WHEN USING COLORBLINDLY -->
+
 <body>  
-    <!-- HEADER -->
+    <!-- HEADER - LANDING PAGE -->
     <header class="header">
         <figure class="logo" aria-label="Bonz.ai logo">
           <a href="index.html" class="header__favicon">
@@ -24,7 +29,7 @@
             class="header__hamburger-menu"
             id="hamburger-menu"
             aria-label="Öppna huvudmeny"
-            tabindex="-1"
+            tabindex="-1" 
         />
         <label 
             class="header__hamburger-btn" for="hamburger-menu" 
@@ -47,17 +52,14 @@
             <li class="header__nav-titles">
               <a href="eat-and-drink.html" class="header__links">ÄT & DRICK</a>
             </li>
-            <li class="header__nav-titles">
-              <a href="rooms.html" class="header__links">VÅRA RUM</a>
-            </li>
-            <li class="header__nav-titles header__nav-titles--more-margin">
+            <li class="header__nav-titles header__nav-titles--more-margin header__nav-titles--padding">
               <a href="booking-room.html" class="btn">BOKA RUM</a>
             </li>
           </ul>
         </nav>
       </header>
 
-    <!-- HERO -->
+    <!-- HERO - LANDING PAGE -->
     <section class="hero">
         <figure class="hero__image-box">
             <img class="hero__image hero__image--no-radius" src="assets/photos/hero-images/hero-ai-kitchen.webp" alt="Hero image of AI-assistent in hotel enviroment"> <!-- AI-GENERAD BILD -->
@@ -76,8 +78,9 @@
         </article>
     </section>
     
+    <!-- MAIN - LANDING PAGE -->
     <main class="wrapper">
-        <!-- BOOKING FORM -->
+        <!-- BOOKING FORM - LANDING PAGE -->
         <form class="booking">
             <section class="booking__titles">
                 <h2 class="booking__head-title">Boka ett rum</h2>
@@ -105,41 +108,41 @@
             
         </form>
 
-        <!-- IMAGE INFO SECTION -->
+        <!-- IMAGE INFO SECTION - LANDING PAGE -->
         <section class="image-info">
-            <section class="image-info__block">
+            <a href="about-bonzai.html" class="image-info__block">
                 <figure class="image-info__figure">
                     <img src="assets/photos/facility/bonsai-hotel.jpg" alt="Image of the Hotel Bonzai" class="image-info__img">
-                </figure> <!-- AI-GENERAD BILD -->
+                </figure>
                 <section class="image-info__text">
                     <h2 class="image-info__title">GRÖN DESIGN</h2>
                     <p class="image-info__description">Hotellets arkitektur smälter samman med naturen, med gröna väggar och takträdgårdar för att minska värmeöar och förbättra luftkvaliteten.</p>
                 </section>
-            </section>
-                        
-            <section class="image-info__block image-info__block--wrap-reverse">
+            </a>
+            
+            <a href="ai.html" class="image-info__block image-info__block--wrap-reverse">
                 <section class="image-info__text">
                     <h2 class="image-info__title">EGEN AI-ASSISTENT</h2>
                     <p class="image-info__description">En AI-assistent i varje rum hjälper gästerna att planera sitt besök, boka aktiviteter eller svara på frågor i realtid.</p>
                 </section>
                 <figure class="image-info__figure">
                     <img src="assets/photos/robots/ai-kitchen-bed.webp" alt="Image of AI-robots who assists in various hotel jobs" class="image-info__img">
-                </figure> <!-- AI-GENERAD BILD -->
-            </section>
+                </figure>
+            </a>
 
-            <section class="image-info__block">
+            <a href="eat-and-drink.html" class="image-info__block">
                 <figure class="image-info__figure">
                     <img src="assets/photos/robots/kitchen-food.jpg" alt="Image of AI-robots who assists in various hotel jobs" class="image-info__img">
-                </figure> <!-- AI-GENERAD BILD -->
+                </figure>
                 <section class="image-info__text">
                     <h2 class="image-info__title">ZERO WASTE-KÖK</h2>
                     <p class="image-info__description">Alla måltider tillagas med lokala, ekologiska ingredienser, och matsvinn återvinns till biogas eller kompost. Fisk och andra råvaror kommer från närområdet.</p>
                 </section>
-            </section>
+            </a>
         </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- FOOTER - LANDING PAGE-->
     <footer class="footer grid-wrapping">
         <figure class="footer__logo grid-wrapping__span-two grid-wrapping__span-full" aria-label="Bonz.ai logo">
             <a href="index.html" class="header__favicon">
